@@ -26,7 +26,7 @@ var common = {},
     *
     * @param  {string} string The string to escape for inserting into HTML
     * @param  {bool} if false, escapes only tags, if true escapes also quotes and ampersands
-    * @returns {string escaped string
+    * @returns {string} escaped string
     */
     common.escape_html = function (string, more) {
         var str = '' + string;

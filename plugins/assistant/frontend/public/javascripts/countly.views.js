@@ -39,12 +39,14 @@ window.AssistantView = {
 
         //-- related to assistant notification button
         //check if notification notification should be shown
-        var arrLen = data.notifications.length;
         this.earliestDataTimestamp = 0;
-        for(var i = 0; i < arrLen; i++){
-            var cd = data.notifications[i].createdDateUTC;
-            if(this.earliestDataTimestamp < cd) {
-                this.earliestDataTimestamp = cd;
+        if (data.notifications) {
+            var arrLen = data.notifications.length;
+            for(var i = 0; i < arrLen; i++){
+                var cd = data.notifications[i].createdDateUTC;
+                if(this.earliestDataTimestamp < cd) {
+                    this.earliestDataTimestamp = cd;
+                }
             }
         }
 
