@@ -1,0 +1,23 @@
+{
+  "name": "countly-custom-retention",
+  "title": "Retention analytics",
+  "version": "0.0.1",
+  "description": "Provide retention information about new users",
+  "author": "Quan",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "countly",
+    "analytics",
+    "retention",
+    "plugins"
+  ],
+  "dependencies": {},
+  "private": true
+}
