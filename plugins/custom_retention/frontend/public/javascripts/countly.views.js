@@ -33,7 +33,7 @@ window.customRetentionView = countlyView.extend({
     },
     updateView: function () {
         var tableData = customRetention.getRetentionData();
-        console.log(JSON.stringify(tableData));
+        //console.log(JSON.stringify(tableData));
         var columnsDef = [];
         columnsDef.push({
             "bSortable":false,

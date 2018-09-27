@@ -13,7 +13,6 @@
         if(_period == countlyCommon.getPeriodForAjax()) {
             return false;
         }
-        console.log("data refresh");
         _period = countlyCommon.getPeriodForAjax();
 
         if (!countlyCommon.DEBUG) {

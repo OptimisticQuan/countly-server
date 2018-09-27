@@ -34,8 +34,10 @@ custom_retention{appId}:
                 //user today has calc retention;
                 return;
             }
-            var dayCount = afterLastSeenTimeObj.now.diff(firstSeenTimeObj.now, 'days');
-            if (dayCount < 0 || dayCount > 30) {
+            var nowDate = moment(afterLastSeenTimeObj.now).hours(0).minutes(0).seconds(0).milliseconds(0);
+            var firstSeenDate = firstSeenTimeObj.now.hours(0).minutes(0).seconds(0).milliseconds(0);
+            var dayCount = nowDate.diff(firstSeenDate, 'days');
+            if (dayCount < 1 || dayCount > 30) {
                 //invalid or useless data;
                 return;
             }
